@@ -368,3 +368,6 @@ FodyWeavers.xsd
 /.sonarcloud/
 /Sonar Cloud Scanning Tool.lnk
 /SonarCloudScannerConfig.json
+
+# NuGet executable
+nuget.exe
