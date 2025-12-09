@@ -69,6 +69,9 @@ Apart from that, the only Requirement is .Net Framework 4.8
 ## Why not just use ViVeTool?
 Using ViVeTool GUI is more easier and user-friendly, besides it lets you also search for features and enable them with a few clicks.
 
+## Building from Source
+Want to compile ViVeTool GUI yourself? See [COMPILE.md](COMPILE.md) for detailed instructions on building the executable files.
+
 # Licensing
 ViVeTool GUI uses Icons from [icons8.com](https://icons8.com/)
 
