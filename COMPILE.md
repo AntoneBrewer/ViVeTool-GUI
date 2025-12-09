@@ -14,14 +14,17 @@ The easiest way to compile the .exe is to use the automated GitHub Actions workf
 
 1. Navigate to the "Actions" tab in the GitHub repository
 2. Click on the "Build ViVeTool-GUI" workflow
-3. Click "Run workflow" button
-4. Wait for the workflow to complete (usually 2-5 minutes)
-5. Download the compiled executables from the "Artifacts" section at the bottom of the workflow run
+3. Click "Run workflow" button (you may need repository permissions)
+4. If prompted, approve the workflow run (required for forks)
+5. Wait for the workflow to complete (usually 2-5 minutes)
+6. Download the compiled executables from the "Artifacts" section at the bottom of the workflow run
 
 The workflow will produce:
 - `ViVeTool-GUI-Release-x64` - Main ViVeTool GUI executable
 - `ViVeTool-GUI-FeatureScanner-Release-x64` - Feature Scanner executable
 - `ViVeTool-GUI-Complete-Build` - All build artifacts including DLLs
+
+**Note:** The workflow uses a Windows runner and automatically handles all dependencies. If you're working on a fork, you may need to enable GitHub Actions in your repository settings and approve the workflow run.
 
 ## Option 2: Manual Compilation with Visual Studio
 

@@ -10,6 +10,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: read
+      actions: read
     
     steps:
       - name: Checkout code
@@ -25,7 +28,7 @@ jobs:
         run: nuget restore ViVeTool_GUI.sln
       
       - name: Build solution (Release x64)
-        run: msbuild ViVeTool_GUI.sln /p:Configuration=Release /p:Platform=x64 /p:OutputPath=bin\x64\Release\ /m
+        run: msbuild ViVeTool_GUI.sln /p:Configuration=Release /p:Platform=x64 /m
       
       - name: Upload ViVeTool-GUI executable
         uses: actions/upload-artifact@v4
